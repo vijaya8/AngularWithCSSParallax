@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--<h1>-->
+<!--Web Application-->
+<!--</h1>-->
+<!--<div style="height:300px;background-color:skyblue;font-size:36px">-->
+<!--Scroll Up and Down this page to see the parallax scrolling effect.-->
+<!--This div is just here to enable scrolling.-->
+<!--Tip: Try to remove the background-attachment property to remove the scrolling effect.-->
+<!--</div>-->
+<div class="container">
+  <h1 align="">Login Application</h1>
+  <form #loginform="ngForm" (ngSubmit)="login(loginform.value)" novalidate>
+    <div class="form-group">
+      <label>UserName/Email</label>
+      <input type="email" class="form-control" name="email" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" name="password" ngModel>
+    </div>
+
+    <button type="submit" class="btn btn-success">Login</button>
+
+  </form>
+</div>
+
+<app-home></app-home>
+
+
+
+
